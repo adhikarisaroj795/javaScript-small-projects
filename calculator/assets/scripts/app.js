@@ -21,13 +21,35 @@ function writeToLog(operationIdentifier, prevResult, operationNumber, newResult)
    console.log(logEntries);
 }
 
-function add(){
+function calculateResult(calculationType){
    const enteredNumber = getUserNumberInput();
-   const initialResult = currentResult 
-   currentResult += enteredNumber;
-   createAndWriteOutput('+', initialResult, enteredNumber );
-   writeToLog('ADD',initialResult, enteredNumber, currentResult);
+   const initialResult = currentResult ;
+   let mathOperator;
    
+   if(calculationType === 'ADD')
+   {
+      currentResult += enteredNumber;
+      mathOperator = '+';
+   }else{
+      calculateResult -= enteredNumber;
+      mathOperator = '-';
+   }
+   createAndWriteOutput('+', initialResult, enteredNumber );
+   writeToLog(calculationType, initialResult, enteredNumber, currentResult);
+
+}
+
+// function add(){
+//    const enteredNumber = getUserNumberInput();
+//    const initialResult = currentResult 
+//    currentResult += enteredNumber;
+//    createAndWriteOutput('+', initialResult, enteredNumber );
+//    writeToLog('ADD',initialResult, enteredNumber, currentResult);
+   
+// }
+//alternative
+function add(){
+   calculateResult('ADD');
 }
 
 function sub(){
