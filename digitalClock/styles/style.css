@@ -22,3 +22,8 @@ body{
     top: -50%;
     
 }
+.dateHolder{
+    font-size:40px ;
+    text-align: center;
+    padding: 5px;
+}
