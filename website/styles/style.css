@@ -45,6 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   gap: 60px;
 }
 
@@ -94,7 +95,7 @@ header {
   }
 
   .nav-menu {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 70px;
     gap: 0;
@@ -198,29 +199,196 @@ header {
     background-color: #ffffff;
   }
   .pageHolder{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    padding-top: 100px;
-    background-color: #FCFCFC;
-    
-    
+    justify-content: space-between;
+    box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     flex-direction: column;
+     margin-top: 10px;
+     padding: 20px;
+     height: fit-content;
+     background-color: #F5F5F5; 
+     gap: 5;
+     overflow: hidden;
+     
+     
   }
+  .pageHolder1{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    /* height: fit-content; */
+    overflow: hidden;
+    
+    
+ } 
+ .pageHolder1 img{
+ max-height: 500px;
+ max-width:  500px;
+ border-radius: 50%;
+}
+ .pageHolder1 p{
+  font-size: 30px;
+ }
+ .content{
+  box-sizing: border-box;
+ /* height: fit-content; */
+  text-align: center;
+  /* background-color: #DCDCDC ; */
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to bottom right, #F0FFF0, #98FB98);
+  filter: brightness(150%);
+}
+
+@media screen and (max-width: 768px) { 
+  .pageHolder1 {
+    flex-direction: column;
+  }
+
+  .pageHolder1 img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .pageHolder1 p {
+    font-size: 24px;
+  }
+}
   .pageHolder img{
-    max-width: 500px;
+    max-width: 900px;
     height: auto;
-    float: left;
     margin-right: 20px;
     border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+    
   }
-  .content{
-    flex: 1;
-    overflow: auto; 
+ 
+  .contentin{
+    box-sizing: border-box;
+    padding: 20px;
     text-align: center;
+    height: fit-content;
+    /* background-color: #DCDCDC ; */
+    text-align: center;
+    
+    background: linear-gradient(to bottom right, #F0FFF0, #98FB98);
+    filter: brightness(150%);
+    margin-top: 5 px;
+    padding: 20px;
+  }
+  .contentin p{
+    font-size: 30px;
+    color: #000066;
+  }
+  .content h2{
+    font-size: 50px;
+    color: #000066;
+  }
+  .content h3{
+    font-size: 40px;
+    color: #000066;
+  }
+  .content p{
+    font-size: 30px;
+    color: #000080;
+    background: linear-gradient(to bottom right, #F0FFF0, #98FB98);
   }
   .mantra{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .pageHolder p{
+    font-size: 30px;
+    margin-top:20 ;
+  }
+  .quotes{
+    /* background-color: yellow; */
+   display: flex;
+   align-items: center;
+   text-align: center;
+   padding: 10px;
+   background: linear-gradient(to bottom right, #F0FFF0, #98FB98);
+   filter: brightness(150%);
+   padding: 10px;
+   
+  }
+  .quotes p{
+    font-size: 30px;
+    text-align: center;
+    color: #000080;
+    background: linear-gradient(to bottom right, #F0FFF0, #98FB98);
+
+    
+  }
+  .shivaD{
+    width: 50%;
+    
+  }
+
+  .quoteBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card{
+    width: 300px;
+    margin: 20px;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .card img{
+    width: 300px;
+    height: 300px;
+   
+  }
+  .quoteContent{
+    padding: 10px;
+  }
+  .quoteContent h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .quoteContent p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .pageHolder2{
+    
+    /* box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     padding: 20px;
+     max-height: 500px;
+     background-color: gray;
+     overflow: hidden;
+     text-align: center; */
+     display: f;
+     
+  }
+
+  .pageHolder2 img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .pageHolder2 h2{
+    font-size: 50px;
+    color: #000066;
+  }
+  .pageHolder2 p{
+    font-size: 25px;
   }
   
