@@ -1,5 +1,5 @@
 const defaultResult = 0;
-let currentResult = defaultResult;
+// let currentResult = defaultResult;
 let logEntries = [];
 
 function getUserNumberInput(){
@@ -78,7 +78,30 @@ function div(){
    writeToLog('div' ,initialResult, enteredNumber, currentResult);
 
 }
+const calculate = (operation) =>{
+   const enteredNumber = getUserNumberInput();
+   const initialResult = currentResult;
+if(operation === 'ADD'){
+   currentResult += enteredNumber;
+    createAndWriteOutput('+', initialResult, enteredNumber );
+    writeToLog('ADD',initialResult, enteredNumber, currentResult);
+}else if(operation === 'SUB'){
+   currentResult = currentResult - enteredNumber;
+   createAndWriteOutput('-', initialResult, enteredNumber);
+   writeToLog('SUB',initialResult, enteredNumber, currentResult);
 
+}else if(operation === 'MUL')
+   
+currentResult = currentResult * enteredNumber;
+   createAndWriteOutput('*', initialResult, enteredNumber);
+   writeToLog('MUL',initialResult, enteredNumber, currentResult);
+
+}else{
+   currentResult = currentResult / enteredNumber;
+   createAndWriteOutput('/', initialResult, enteredNumber )
+   writeToLog('div' ,initialResult, enteredNumber, currentResult);
+
+}
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', sub);

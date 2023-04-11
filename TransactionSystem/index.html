@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction System</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/node.js" defer></script>
+    <script src="node.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" defer></script>
 
@@ -14,16 +14,16 @@
 </head>
 <body>
    <h1>Transaction Recording System</h1>
-   <form action>
+   <form action="submit">
     <label for="date">Date:</label>
     <input type="date" id="date" name="date">
 
     <label for="Transaction-type">Transaction Type:</label>
     <select name="transaction-type" id="transaction-type">
         <option value="income">
-            Income
+            income
         </option>
-        <option value="Expenses">
+        <option value="expenses">
             expenses
         </option>
     </select><br>
