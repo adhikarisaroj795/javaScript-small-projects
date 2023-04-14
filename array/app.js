@@ -100,3 +100,82 @@ const filteredArray = prices.filter((price, index, prices) =>{
 
 
 console.log(filteredArray);
+
+let sum = 0;
+
+prices.forEach((price) => {
+    sum += price;
+});
+
+
+
+console.log(sum);
+
+const sum1 = prices.reduce((prevValue, curValue, curIndex, prices) =>{
+    return prevValue + curValue;
+}, 0);
+console.log(sum1);
+
+const data = 'new year: 20.36: 2000';
+
+const transformedData = data.split(':');
+
+console.log(transformedData);
+
+const nameFragments = ['max', 'saroj'];
+
+const nam = nameFragments.join(' ');
+console.log(nam);
+
+const copiedNameFragments = [...nameFragments];
+nameFragments.push('mr');
+console.log(nameFragments, copiedNameFragments);
+
+console.log(Math.min(...prices));
+
+const personss = [{ name : 'max', age: ' 30'}, { name: 'saroj', age: 31}];
+const copiedpersons = personss.map(personss => ({
+name: personss.name,
+age: personss.age
+}) );
+
+personss.push({name: 'manu', age: 29});
+personss[0].age = 31;
+
+console.log(personss, copiedpersons);
+ 
+
+const nameDAta = ['max', 'joras', '30', 'Age'];
+const [firstName, LastName, ...otherInformation] = nameDAta;
+console.log(firstName, LastName);
+console.log(otherInformation);
+
+const ids = new Set(['hello','from', 'jhapa']);
+console.log(ids.has(1));
+
+ids.add('hello');
+
+for(const entry of ids.entries()){
+    console.log(entry[0]);
+}
+
+ids.delete('from');
+
+const person1 = { name: 'max'};
+const person2 = { name: 'manuel'};
+
+const personData1 = new Map([[person1,[{ date: 'yesterday', price: 10}]]]);
+personData1.set(person2, [{ date : 'two weeaks', price: 100}]);
+console.log(personData1);
+console.log(personData1.get(person1));
+
+for ( const entry of personData.entries){
+    console.log(entry);
+}
+
+for(const key of personData1.keys()){
+    console.log(key);
+}
+
+
+
