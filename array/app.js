@@ -6,7 +6,7 @@ console.log(moreNumbers);
 
 const yetMoreNumbers = Array.of(1, 2);
 console.log(yetMoreNumbers);
-//
+
 const listItems = document.querySelectorAll('li');
 console.log(listItems);
 
@@ -176,6 +176,70 @@ for ( const entry of personData.entries){
 for(const key of personData1.keys()){
     console.log(key);
 }
+
+let person = { name : 'max'};
+const persons = new WeakSet();
+
+persons.add(person);
+
+console.log(persons);
+
+
+
+const personData3 = new WeakMap();
+personData3.set(person, 'extra info');
+person = null;
+console.log(personData3);
+
+const arrayChoice = [5, 10 , 20 , 3, 2 ,90, 15, 1];
+
+const filteredArraylesstthanFive = arrayChoice.filter((num, index, arrayChoice) => {
+   return num > 5;
+})
+
+console.log(filteredArraylesstthanFive);
+
+
+const singleNumber = filteredArraylesstthanFive.map((num, idx, arrayChoice) =>{
+        return { num: num};
+});
+
+console.log(singleNumber);
+
+const reduceArray =  filteredArraylesstthanFive.reduce((prevValue, curValue, curIndex) => {
+ return prevValue * curValue;
+},1);
+
+console.log(reduceArray);
+
+const findMaxMin = (...args) => {
+    let max = args[0];
+    let min = args[0];
+    args.forEach((num, idx, arrayChoice) => {
+        if(num > max){
+            max = num;
+        }
+        if(num < min){
+            min = num;
+        }
+    });
+    return [max, min];
+};
+
+const [smallestNumber, LargesttNumber] = findMaxMin(...arrayChoice);
+console.log(smallestNumber, LargesttNumber);
+
+const dataSet = new Set();
+dataSet.add(10);
+dataSet.add(20);
+dataSet.add(20);
+
+console.log(dataSet);
+
+
+
+
+
 
 
 
