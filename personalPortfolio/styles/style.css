@@ -143,11 +143,43 @@
     margin: 20px;
     font-family: 'Poppins', sans-serif;
 }
-.blogContainer h1{
+ h1{
 
     font-family: 'Poppins', sans-serif;
     margin: 23px;
 }
-.blogItem p{
+ p{
     font-family: 'Source Code Pro', monospace;
+}
+.intro h2{
+    font-family: 'Poppins', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+.skillContainer{
+    padding: 12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundered{
+    width: 265px;
+}
+.fifty{
+    width: 125px;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
 }
