@@ -6,12 +6,31 @@ body {
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   
+  
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+:root{
+   --primary-color: #edf2fc;
+  --secondary-color: #212121;
+ 
+}
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color: #FFF;
+}
+
+#micon{
+  width: 30px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  text-align: right;
 }
 
 .wrapper {
@@ -21,7 +40,7 @@ body {
 }
 
 header {
-  background-color: #262626;
+  background-color: var(--secondary-color);
 }
 
 .nav-menu li {
@@ -29,7 +48,7 @@ header {
 }
 
 .navbar a {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -39,6 +58,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  
 }
 
 .nav-menu {
@@ -100,7 +120,7 @@ header {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #262626;
+    background-color: var(--secondary-color);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -127,7 +147,7 @@ header {
   
   .footer {
     
-    background-color: #24262b;
+    background-color: var(--secondary-color);
     padding: 70px 0;
    
   }
@@ -139,7 +159,7 @@ header {
   
   .footer-col h4 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: 600;
@@ -169,7 +189,7 @@ header {
   
   .footer-col ul li a {
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
@@ -190,13 +210,13 @@ header {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--primary-color);
     transition: all 0.5s ease;
   }
   
   .footer-col .social-links a:hover {
     color: #e91e63;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
   }
   .pageHolder{
     justify-content: space-between;
@@ -209,7 +229,7 @@ header {
      margin-top: 10px;
      padding: 20px;
      height: fit-content;
-     background-color: #F5F5F5; 
+     background-color: var(--primary-color); 
      gap: 5;
      overflow: hidden;
      
