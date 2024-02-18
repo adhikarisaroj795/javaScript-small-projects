@@ -525,6 +525,10 @@ transform: rotate(100deg);
     border: 2px solid #FFDAB9;
     margin-top: 5px;
 }
+
+.btn-contact button:nth-child(3){
+    color: red;
+}
 footer{
     
     /* border: 1px solid black; */
