@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.p-1{
+    padding: 20px 80px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4393a3;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+.navul li{
+    list-style: none;
+    & a{
+        
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
+/* admin panel aside */
+
+.admin-pannel-aside{
+    width: 30%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    & a{
+        text-decoration: none;
+        color: #333;
+    }
+    & li{
+        list-style: none;
+        margin-bottom: 50px;
+        /* background-color: bisque; */
+        padding: 5px;
+        font-size: 1.3rem;
+        /* text-align: center; */
+    }
+
+    & li a:hover{
+        background-color: #fff;
+        padding: 10px;
+    }
+}
+.admin-pannel-navigation ul{
+    padding-top: 20px;
+}
+
+   
+
+.admin-pannel-logo a{
+    font-weight: 600;
+    color: gray;
+    font-size: 2rem;
+}
+
+.admin-pannel-main{
+    display: flex;
+}
+.admin-pannel-footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.admin-pannel-content{
+    flex: 1;
+    padding: 20px;
+    & h1{
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+   
+}
+

@@ -1,0 +1,39 @@
+.addStudentForm{
+    display: flex;
+    padding: 10px;
+    
+    flex-direction: column;
+    & label{
+        font-size: 1.5rem;
+    }
+    & input{
+        border: 1 px solid gray;
+        padding: 10px 0;
+        /* width: calc(100% - 10px); */
+        font-size: 1.3rem;
+        
+        box-sizing: border-box;
+    }
+   
+}
+.form-label-input {
+    display: flex;
+    flex-direction: column; 
+    /* background-color: red; */
+    width: 40%;
+    margin-bottom: 20px;
+   
+   
+  
+}
+input[type="submit"] {
+   
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+

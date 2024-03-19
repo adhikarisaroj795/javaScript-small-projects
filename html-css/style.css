@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backImg{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    background-image: url("html/3.png");
+    /* background-repeat: repeat-y;  */
+    background-size: 100% 100%;  /* centers image  */
+    background-attachment: fixed;
+}
+/* repeat x and y repeat images on particular direction */
+
+.backImg1{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    background-image: url("html/2.png");
+    /* background-repeat: repeat-y;  */
+    background-size: 100% 100%;  /* centers image  */
+}
+.txt{
+    color: red;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    direction: rtl;
+    direction: ltr;
+    text-indent: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txt:hover{
+    color: green;
+}
+.txt:visited{
+    color: blueviolet;
+}
+.txt:active{
+    color: pink;
+}
+.borderCSs{
+width: 500px;
+height: 300px;
+background-color: black;
+border: 5px solid red;
+border-radius: 50%;
+}
+
+ul{
+    list-style-type: square;
+}
+ol{
+    list-style-type: lower-alpha;
+}
+.ulclas{
+    height: 100vh;
+    width: 100%;
+    padding: 50px 80px;
+    text-align: center;
+}
+.boxModel{
+    padding: 10px;
+    height: 300px;
+    width: 400;
+    background-color: red;
+}
+input{
+    padding: 20px;
+    /* margin-top: 100px; */
+}
+p{
+    height: 400px;
+    width: 200px;
+    border: 5px solid grey;
+    overflow: auto
+}
+.father{
+    width: 600px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+}
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: gray;
+    position: absolute;
+   right: 0;
+}
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color: salmon;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color: khaki;
+    position: absolute;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    /* left: 0; */
+}
+
+.container{
+    display: grid;
+    background-color: yellow;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: minmax(50px, auto);
+}
+.items{
+    background-color: lightcoral;
+    border: 3px solid green;
+}
